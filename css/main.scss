@@ -60,3 +60,11 @@
 .aboutVideoPlaySVG {
   pointer-events: none;
 }
+
+.aboutVideoBlock-is-playing .aboutVideoPause {
+  opacity: 0;
+}
+
+.aboutVideoBlock-is-playing:hover .aboutVideoPause {
+  opacity: 1;
+}
