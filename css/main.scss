@@ -1,0 +1,17 @@
+.aboutVideoBlock {
+  height: max-content;
+}
+
+.aboutVideo {
+  position: relative;
+  height: initial;
+  object-fit: cover;
+  width: 74vw;
+  margin: 0px 0 0 -37vw;
+}
+
+.aboutVideoBlock-is-playing .aboutVideoPause {
+  top: 50%;
+  left: 50%;
+  margin: -35px 0 0 -35px;
+}
