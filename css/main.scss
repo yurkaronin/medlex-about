@@ -1,11 +1,8 @@
 .aboutVideoBlock {
   height: max-content;
-
-  @media only screen and (max-width: 900px) {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
 }
 
 .aboutVideoBlock-light {
@@ -34,17 +31,15 @@
 .aboutVideoPlay,
 .aboutVideoPause {
 
-  @media (max-width: 900px) {
-    position: absolute;
-    right: auto !important;
-    left: auto !important;
-    bottom: auto !important;
-    top: auto !important;
-    margin: 0;
-    width: 70px;
-    padding: 0;
-    height: 70px;
-  }
+  position: absolute;
+  right: auto !important;
+  left: auto !important;
+  bottom: auto !important;
+  top: auto !important;
+  margin: 0;
+  width: 70px;
+  padding: 0;
+  height: 70px;
 
 }
 
