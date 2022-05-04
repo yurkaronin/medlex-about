@@ -869,7 +869,7 @@
                   <!-- <source src="./video/video.webm" type="video/webm"> -->
                   <source src="./video/video.mp4" type="video/mp4">
                   <!-- <source src="./video/video.ogv" type="video/ogg"> -->
-                </video> 
+                </video>
                 <a href="./index_files/saved_resource" id="aboutvideoPlay" class="aboutVideoPlay"><svg
                     class="aboutVideoPlaySVG">
                     <use xlink:href="#spt-play"></use>
@@ -1237,6 +1237,15 @@
         </div>
       </div>
     </section>
+
+    <script>
+      video.addEventListener('click', () => {
+        if (video.paused)
+          video.play();
+        else
+          video.pause();
+      });
+    </script>
 
   </main>
 
