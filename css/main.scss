@@ -2,7 +2,9 @@
   height: max-content;
 
   @media only screen and (max-width: 900px) {
-    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 }
 
@@ -29,15 +31,25 @@
   }
 }
 
-.aboutVideoBlock-is-playing .aboutVideoPause {
-  top: 50%;
-  left: 50%;
-  margin: -35px 0 0 -35px;
+.aboutVideoPlay,
+.aboutVideoPause {
+
+  @media (max-width: 900px) {
+    position: absolute;
+    right: auto !important;
+    left: auto !important;
+    bottom: auto !important;
+    top: auto !important;
+    margin: -35px 0 0 -35px;
+    width: 70px;
+    padding: 0;
+    height: 70px;
+  }
+
 }
 
-.aboutVideoPlay {
-  @media only screen and (max-width: 900px) {
-    margin: -35px 0 0 -35px;
-  }
-  
+.aboutVideoPlay,
+.aboutVideoPause {
+  font-size: 0;
+  line-height: 0;
 }
